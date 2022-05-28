@@ -19,6 +19,7 @@ body {
 }
 
 #map {
+  min-height: 520px;
   flex-grow: 1;
   position: relative;
   z-index: -1;
@@ -36,6 +37,12 @@ body {
   padding-top: 26px;
   padding-bottom: 126px;
 }
+@media only screen and (max-width: 376px) {
+  .search {
+    padding: 24px;
+    padding-bottom: 145px;
+  }
+}
 
 .search h1 {
   font-size: 32px;
@@ -43,12 +50,24 @@ body {
   margin-bottom: 22px;
   color: white;
 }
+@media only screen and (max-width: 376px) {
+  .search h1 {
+    font-size: 25px;
+    margin-bottom: 30px;
+  }
+}
 
 .search-box {
   width: 50%;
   margin: 0 auto;
   display: flex;
   align-items: stretch;
+}
+@media only screen and (max-width: 376px) {
+  .search-box {
+    width: 100%;
+    margin: 0;
+  }
 }
 
 .input-box {
@@ -81,6 +100,7 @@ body {
 
 .address_section {
   width: 100%;
+  padding: 0 24px;
 }
 
 .address_section article {
@@ -89,8 +109,8 @@ body {
 
 .address-list {
   width: 100%;
-  display: flex;
   background-color: white;
+  display: flex;
   align-items: stretch;
   justify-content: center;
   padding: 30px 0;
@@ -100,10 +120,25 @@ body {
   left: 0;
   top: -78px;
 }
+@media only screen and (max-width: 376px) {
+  .address-list {
+    display: block;
+    text-align: center;
+    padding: 0 30px 30px 30px;
+    top: -120px;
+  }
+}
 
 .address-item {
   flex: 1;
   padding: 0 30px;
+}
+@media only screen and (max-width: 376px) {
+  .address-item {
+    display: block;
+    text-align: center;
+    padding: 30px 0 0 0;
+  }
 }
 
 .address-title {
@@ -113,15 +148,30 @@ body {
   color: hsl(0deg, 0%, 59%);
   padding-bottom: 12px;
 }
+@media only screen and (max-width: 376px) {
+  .address-title {
+    font-size: 10px;
+  }
+}
 
 .address-content {
   color: hsl(0deg, 0%, 17%);
   font-size: 28px;
   font-weight: 500;
 }
+@media only screen and (max-width: 376px) {
+  .address-content {
+    font-size: 20px;
+  }
+}
 
 .saparator {
   min-width: 1px;
   margin: 10px 0;
   background-color: rgb(198, 198, 198);
+}
+@media only screen and (max-width: 376px) {
+  .saparator {
+    display: none;
+  }
 }/*# sourceMappingURL=style.css.map */
