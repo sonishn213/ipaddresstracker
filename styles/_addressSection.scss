@@ -1,0 +1,45 @@
+@use "variable" as var;
+
+.address_section {
+  width: 100%;
+}
+.address_section article {
+  position: relative;
+}
+.address-list {
+  width: 100%;
+  display: flex;
+  background-color: white;
+  align-items: stretch;
+  justify-content: center;
+  padding: 30px 0;
+  border-radius: 15px;
+  z-index: 10;
+  position: absolute;
+  left: 0;
+  top: -78px;
+}
+.address-item {
+  flex: 1;
+  padding: 0 30px;
+}
+// .address-item:not(:last-child) {
+//   border-right: 1px solid var.$DarkGray;
+// }
+.address-title {
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var.$DarkGray;
+  padding-bottom: 12px;
+}
+.address-content {
+  color: var.$VeryDarkGray;
+  font-size: 28px;
+  font-weight: 500;
+}
+.saparator {
+  min-width: 1px;
+  margin: 10px 0;
+  background-color: rgb(198, 198, 198);
+}

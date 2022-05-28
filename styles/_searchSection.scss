@@ -1,0 +1,42 @@
+@use "variable" as var;
+
+.search-section {
+  width: 100%;
+  text-align: center;
+  background-image: url("../images/pattern-bg.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.search {
+  padding-top: 26px;
+  padding-bottom: 126px;
+}
+.search h1 {
+  font-size: 32px;
+  font-weight: 500;
+  margin-bottom: 22px;
+  color: white;
+}
+.search-box {
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  align-items: stretch;
+}
+.input-box {
+  width: 100%;
+  border-radius: 18px 0px 0px 18px;
+  font-size: 18px;
+  padding: 20px 22px;
+  border: none;
+  outline: none;
+}
+.input-box::placeholder {
+  color: rgb(157, 156, 156);
+}
+.btn {
+  background-color: black;
+  padding: 20px 22px;
+  border-radius: 0px 18px 18px 0px;
+  border: none;
+}
